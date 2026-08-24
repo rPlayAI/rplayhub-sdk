@@ -6,7 +6,7 @@ read the device — so an AI agent can use the phone the way a person would.
 [rPlayHub](../rplay-hub) is *"adb for iPhone"*: a from-scratch CoreDevice host that mirrors and
 controls a physical iPhone with **no Xcode and no Apple daemons in the runtime path**. This
 repository is the programmable half — a thin client, an MCP server that plugs into Claude Code and
-OpenAI Codex, and a working agent sample.
+OpenAI Codex, and working agent samples for Claude, Gemini, and OpenAI.
 
 ```python
 from rplayhub_client import RPlayHubClient
@@ -56,8 +56,10 @@ contract and [docs/api.md](docs/api.md) for the client.
 ```
 rplayhub_client.py         the client — one class, the whole API
 mcp_server.py              MCP stdio server for Claude Code / Codex   (docs/mcp.md)
-examples/01_smoke_test.py  read-only tour of the API
-examples/02_claude_agent.py  a ~120-line "AI drives the phone" loop (needs an ANTHROPIC_API_KEY)
+examples/01_smoke_test.py    read-only tour of the API
+examples/02_claude_agent.py  "AI drives the phone" loop -- Anthropic  (ANTHROPIC_API_KEY)
+examples/03_gemini_agent.py  the same loop -- Gemini              (GEMINI_API_KEY)
+examples/04_openai_agent.py  the same loop -- OpenAI              (OPENAI_API_KEY)
 docs/api.md                client reference
 docs/mcp.md                MCP setup
 ```
