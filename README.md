@@ -22,6 +22,18 @@ c.launch_app("com.apple.Preferences")              # open Settings
 Everything runs against a **physical iPhone**, not a simulator. No jailbreak, no app installed on
 the phone.
 
+## Requirements
+
+| | |
+|---|---|
+| **iPhone** | **iOS 17 or later** — for everything the SDK does (screenshot, tap, swipe, apps, files, device info, power, syslog). CoreDevice, which the engine speaks, arrived in iOS 17. |
+| **iOS 27+** | only for **live video mirroring** in the rPlayHub *app's* View Screen — the SDK does not use it, so the SDK and the agent samples work fine on iOS 17–26. (iOS 26 and earlier "cannot mirror," same limit as Apple's Device Hub, but they screenshot and take input.) |
+| **On the phone** | Developer Mode on (Settings → Privacy & Security), and the phone paired + trusted with the host once over USB. |
+| **Host** | macOS with the rPlayHub engine running; a paired iPhone on USB (preferred) or Wi‑Fi. |
+
+The agent loop drives the phone by **screenshot → look → tap**, which needs no live video — so an
+iOS 26 phone automates just as well as an iOS 27 one; you just won't see a moving mirror.
+
 ## What you can do
 
 | | |

@@ -5,7 +5,8 @@ Same loop as the Claude/OpenAI samples, swapped to Gemini.
     export GEMINI_API_KEY=...
     python3 examples/03_gemini_agent.py "open Settings and turn on Airplane Mode"
 
-Needs: pip install google-genai ; the rPlayHub engine running with an iOS 27 device.
+Needs: pip install google-genai ; the rPlayHub engine running with a device bound (iOS 17+; the loop is screenshot-based,
+so live video / iOS 27 is not required).
 """
 from __future__ import annotations
 

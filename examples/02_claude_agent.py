@@ -7,8 +7,7 @@ like a person" loop, ~120 lines.
     export ANTHROPIC_API_KEY=sk-ant-...
     python3 examples/02_claude_agent.py "open Settings and turn on Airplane Mode"
 
-Needs: pip install anthropic ; the rPlayHub engine running with an iOS 27 device (so it mirrors,
-and taps land where the screenshot shows).
+Needs: pip install anthropic ; the rPlayHub engine running with a device bound (iOS 17+).
 """
 from __future__ import annotations
 

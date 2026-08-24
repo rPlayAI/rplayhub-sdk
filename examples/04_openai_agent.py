@@ -5,7 +5,8 @@ Same loop as the Claude sample: screenshot -> model looks -> model calls a tool 
     export OPENAI_API_KEY=sk-...
     python3 examples/04_openai_agent.py "open Settings and turn on Airplane Mode"
 
-Needs: pip install openai ; the rPlayHub engine running with an iOS 27 device.
+Needs: pip install openai ; the rPlayHub engine running with a device bound (iOS 17+; the loop is screenshot-based,
+so live video / iOS 27 is not required).
 """
 from __future__ import annotations
 
