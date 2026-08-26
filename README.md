@@ -74,6 +74,7 @@ examples/03_gemini_agent.py  the same loop -- Gemini              (GEMINI_API_KE
 examples/04_openai_agent.py  the same loop -- OpenAI              (OPENAI_API_KEY)
 docs/api.md                client reference
 docs/mcp.md                MCP setup
+docs/help.html             rPlayHub app help (open in a browser)
 ```
 
 ## Coordinates
